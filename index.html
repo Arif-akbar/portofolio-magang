@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — [Nama Kamu]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">[Nama<span>.</span>]</a>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#projects">Proyek</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#experience">Pengalaman</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hubungi Saya</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobileMenu()">Tentang</a>
+  <a href="#projects" onclick="closeMobileMenu()">Proyek</a>
+  <a href="#skills" onclick="closeMobileMenu()">Keahlian</a>
+  <a href="#experience" onclick="closeMobileMenu()">Pengalaman</a>
+  <a href="#contact" onclick="closeMobileMenu()">Kontak</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-content">
+    <!-- <div class="avail-badge">
+      <div class="avail-dot"></div>
+      Tersedia untuk magang
+    </div>
+    <div class="hero-label">UI/UX Designer & Front-End Developer</div> -->
+    <h1 class="hero-name">
+      <div class="line1">Nama</div>
+      <div class="line2">Kamu<span class="accent">.</span></div>
+    </h1>
+    <p class="hero-desc">
+      Saya merancang <strong>pengalaman digital yang bermakna</strong> — dari wireframe hingga kode yang berjalan. Fokus pada antarmuka yang intuitif, estetis, dan berdampak.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">Lihat Proyek →</a>
+      <a href="#" class="btn-secondary" id="cvBtn">Download CV ↓</a>
+    </div>
+  </div>
+  <div class="hero-status">
+    <div>
+      <div class="hero-stat-num">12+</div>
+      <div class="hero-stat-label">Proyek selesai</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">3+</div>
+      <div class="hero-stat-label">Tahun belajar</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">8+</div>
+      <div class="hero-stat-label">Tools dikuasai</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-eyebrow reveal">Tentang Saya</div>
+        <h2 class="section-title reveal reveal-delay-1">Desainer yang<br>berpikir<br><em style="font-style:italic;color:var(--accent)">teknis.</em></h2>
+        <p class="about-text reveal reveal-delay-2">
+          Saya mahasiswa <strong>[Program Studi]</strong> di <strong>[Universitas]</strong> yang passionate di bidang desain UI/UX dan pengembangan front-end. Saya percaya desain yang baik adalah yang tidak hanya indah, tapi juga fungsional.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          Dengan pemahaman di kedua dunia — <strong>desain dan kode</strong> — saya bisa menjembatani gap antara tim desainer dan developer untuk menghasilkan produk yang kohesif.
+        </p>
+        <div class="about-tags reveal reveal-delay-3">
+          <span class="tag">Figma</span>
+          <span class="tag">Adobe XD</span>
+          <span class="tag">React</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Design System</span>
+        </div>
+      </div>
+      <div class="about-photo-block reveal reveal-delay-2">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📸</div>
+          <span style="font-size:0.8rem;position:relative;z-index:1">Ganti dengan foto Anda</span>
+        </div>
+        <div class="accent-badge">
+          <span>2025</span>
+          Ready
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-eyebrow reveal">Keahlian</div>
+    <h2 class="section-title reveal reveal-delay-1">Tools & teknologi<br>yang saya kuasai.</h2>
+    <div class="skills-grid">
+      <div class="skill-cell reveal">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">UI Design</div>
+        <div class="skill-sub">Figma, Adobe XD, Sketch</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.9"></div></div>
+      </div>
+      <div class="skill-cell reveal reveal-delay-1">
+        <div class="skill-icon">🔍</div>
+        <div class="skill-name">UX Research</div>
+        <div class="skill-sub">User interview, usability testing, persona</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.75"></div></div>
+      </div>
+      <div class="skill-cell reveal reveal-delay-2">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Front-End Dev</div>
+        <div class="skill-sub">HTML, CSS, JavaScript, React</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.8"></div></div>
+      </div>
+      <div class="skill-cell reveal reveal-delay-3">
+        <div class="skill-icon">📐</div>
+        <div class="skill-name">Prototyping</div>
+        <div class="skill-sub">Interactive prototype, micro-interaction</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.85"></div></div>
+      </div>
+      <div class="skill-cell reveal">
+        <div class="skill-icon">🗂️</div>
+        <div class="skill-name">Design System</div>
+        <div class="skill-sub">Component library, tokens, documentation</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.7"></div></div>
+      </div>
+      <div class="skill-cell reveal reveal-delay-1">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Responsive Design</div>
+        <div class="skill-sub">Mobile-first, accessibility, cross-platform</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--w:0.88"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <div class="section-eyebrow reveal">Proyek</div>
+        <h2 class="section-title reveal reveal-delay-1">Karya pilihan<br>saya.</h2>
+      </div>
+      <a href="#" class="btn-secondary reveal reveal-delay-2" style="white-space:nowrap;font-size:0.85rem">Lihat semua →</a>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Featured project -->
+      <a href="#" class="project-card featured reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-bg thumb-1">
+            <span style="font-size:3rem;opacity:0.4">🏠</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">UI/UX Design</span>
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Mobile App</span>
+          </div>
+          <div class="project-title">Redesign Aplikasi Properti — [Nama Proyek]</div>
+          <div class="project-desc">Redesign alur pencarian properti yang menurunkan drop-off rate 40% dan meningkatkan konversi. Riset mendalam dengan 15 responden, wireframe, hingga prototype high-fidelity.</div>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2024</span>
+          <div class="project-link-icon">↗</div>
+        </div>
+      </a>
+
+      <!-- Small card -->
+      <a href="#" class="project-card small reveal reveal-delay-1">
+        <div class="project-thumb">
+          <div class="project-thumb-bg thumb-2">
+            <span style="font-size:2.5rem;opacity:0.4">🛒</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags"><span class="project-tag">E-Commerce</span></div>
+          <div class="project-title">Dashboard Admin Toko Online</div>
+          <div class="project-desc">Design sistem dashboard untuk manajemen produk dan pesanan.</div>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2024</span>
+          <div class="project-link-icon">↗</div>
+        </div>
+      </a>
+
+      <!-- Medium cards -->
+      <a href="#" class="project-card medium reveal reveal-delay-1">
+        <div class="project-thumb">
+          <div class="project-thumb-bg thumb-3">
+            <span style="font-size:2.5rem;opacity:0.4">📚</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">React</span>
+          </div>
+          <div class="project-title">Platform Belajar Online — [Nama Proyek]</div>
+          <div class="project-desc">Pengembangan front-end platform e-learning dengan React. Implementasi design system dari Figma ke kode.</div>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2023</span>
+          <div class="project-link-icon">↗</div>
+        </div>
+      </a>
+
+      <a href="#" class="project-card medium reveal reveal-delay-2">
+        <div class="project-thumb">
+          <div class="project-thumb-bg thumb-4">
+            <span style="font-size:2.5rem;opacity:0.4">💊</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Kesehatan</span>
+            <span class="project-tag">UX Research</span>
+          </div>
+          <div class="project-title">Aplikasi Pengingat Obat — [Nama Proyek]</div>
+          <div class="project-desc">UX research + prototype untuk aplikasi reminder obat bagi lansia. Fokus aksesibilitas dan kemudahan pakai.</div>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2023</span>
+          <div class="project-link-icon">↗</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-eyebrow reveal">Pengalaman</div>
+    <h2 class="section-title reveal reveal-delay-1">Perjalanan saya<br>sejauh ini.</h2>
+    <div class="exp-grid">
+      <div class="exp-nav">
+        <div class="exp-tab active" onclick="switchExp(this, 'exp1')">
+          <div class="exp-tab-dot"></div>
+          <span class="exp-tab-label">Organisasi / Himpunan</span>
+        </div>
+        <div class="exp-tab" onclick="switchExp(this, 'exp2')">
+          <div class="exp-tab-dot"></div>
+          <span class="exp-tab-label">Freelance Project</span>
+        </div>
+        <div class="exp-tab" onclick="switchExp(this, 'exp3')">
+          <div class="exp-tab-dot"></div>
+          <span class="exp-tab-label">Kompetisi / Event</span>
+        </div>
+        <div class="exp-tab" onclick="switchExp(this, 'exp4')">
+          <div class="exp-tab-dot"></div>
+          <span class="exp-tab-label">Volunteer / Relawan</span>
+        </div>
+      </div>
+      <div class="exp-panels">
+        <div class="exp-panel active" id="exp1">
+          <div class="exp-panel-header">
+            <div class="exp-role">Kepala Divisi Kreatif</div>
+            <div class="exp-company">Himpunan Mahasiswa [Prodi] — [Universitas]</div>
+            <div class="exp-period">Agustus 2023 — Desember 2024</div>
+          </div>
+          <p class="exp-body">Memimpin tim kreatif yang terdiri dari 8 anggota untuk memproduksi materi visual dan digital untuk seluruh kegiatan himpunan.</p>
+          <ul class="exp-bullets">
+            <li>Merancang identitas visual event tahunan yang dihadiri 500+ peserta</li>
+            <li>Membuat panduan brand (brand guideline) untuk konsistensi visual himpunan</li>
+            <li>Mengelola sosial media dengan pertumbuhan follower 200% dalam 6 bulan</li>
+            <li>Melatih 5 anggota baru dalam penggunaan Figma dan Adobe Illustrator</li>
+          </ul>
+        </div>
+        <div class="exp-panel" id="exp2">
+          <div class="exp-panel-header">
+            <div class="exp-role">UI/UX Designer — Freelance</div>
+            <div class="exp-company">Berbagai klien UMKM & Startup</div>
+            <div class="exp-period">Januari 2023 — Sekarang</div>
+          </div>
+          <p class="exp-body">Mengerjakan proyek desain UI/UX untuk berbagai klien, mulai dari landing page hingga aplikasi mobile.</p>
+          <ul class="exp-bullets">
+            <li>Menyelesaikan 8+ proyek desain UI untuk klien UMKM dan startup lokal</li>
+            <li>Menangani proyek dari discovery, wireframe, hingga handoff ke developer</li>
+            <li>Retensi klien 80% dengan rata-rata rating kepuasan 4.8/5</li>
+          </ul>
+        </div>
+        <div class="exp-panel" id="exp3">
+          <div class="exp-panel-header">
+            <div class="exp-role">Finalis — UI/UX Competition</div>
+            <div class="exp-company">[Nama Kompetisi] — [Penyelenggara]</div>
+            <div class="exp-period">Oktober 2024</div>
+          </div>
+          <p class="exp-body">Masuk ke babak final kompetisi desain UI/UX tingkat nasional dengan solusi inovatif untuk tantangan yang diberikan.</p>
+          <ul class="exp-bullets">
+            <li>Berhasil menyisihkan 200+ tim dari seluruh Indonesia</li>
+            <li>Presentasi solusi di hadapan juri dari perusahaan teknologi ternama</li>
+            <li>Menghasilkan prototipe high-fidelity dalam waktu 48 jam</li>
+          </ul>
+        </div>
+        <div class="exp-panel" id="exp4">
+          <div class="exp-panel-header">
+            <div class="exp-role">Mentor Desain — Volunteer</div>
+            <div class="exp-company">[Nama Komunitas / Program]</div>
+            <div class="exp-period">Maret 2024 — Juni 2024</div>
+          </div>
+          <p class="exp-body">Membimbing 20+ pelajar SMA dalam memahami dasar-dasar desain UI/UX dan cara menggunakan Figma sebagai alat desain.</p>
+          <ul class="exp-bullets">
+            <li>Mengajar 10 sesi online setiap minggu selama 3 bulan</li>
+            <li>Menyusun kurikulum desain dasar yang terstruktur dan mudah dipahami</li>
+            <li>95% peserta berhasil menyelesaikan proyek akhir mereka</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-eyebrow reveal">Pendidikan</div>
+    <h2 class="section-title reveal reveal-delay-1">Latar belakang<br>akademis saya.</h2>
+    <div class="edu-cards">
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">S1 Teknik Informatika / Desain Komunikasi Visual</div>
+        <div class="edu-school">[Nama Universitas]</div>
+        <div class="edu-year">2021 — Sekarang · IPK: 3.7x/4.00</div>
+        <p class="edu-desc">Fokus pada mata kuliah Human-Computer Interaction, Desain Grafis, dan Pemrograman Web. Aktif dalam berbagai proyek akademis berbasis desain.</p>
+      </div>
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-icon">🏫</div>
+        <div class="edu-degree">SMA / SMK [Jurusan]</div>
+        <div class="edu-school">[Nama Sekolah]</div>
+        <div class="edu-year">2018 — 2021</div>
+        <p class="edu-desc">Fondasi awal dalam bidang teknologi dan kreativitas. Aktif dalam ekskul desain dan karya ilmiah remaja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-eyebrow reveal">Sertifikat</div>
+    <h2 class="section-title reveal reveal-delay-1">Sertifikasi &<br>pencapaian.</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎨</div>
+        <div>
+          <div class="cert-title">Google UX Design Professional Certificate</div>
+          <div class="cert-issuer">Google · Coursera</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon">⚛️</div>
+        <div>
+          <div class="cert-title">React — The Complete Guide</div>
+          <div class="cert-issuer">Udemy · Maximilian Schwarzmüller</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon">📊</div>
+        <div>
+          <div class="cert-title">Figma Intermediate to Advanced</div>
+          <div class="cert-issuer">Dicoding Indonesia</div>
+          <div class="cert-year">2023</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-title">Front-End Web Development</div>
+          <div class="cert-issuer">Dicoding Indonesia</div>
+          <div class="cert-year">2023</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon">🏆</div>
+        <div>
+          <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
+          <div class="cert-issuer">Nama Lembaga</div>
+          <div class="cert-year">20XX</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon">✨</div>
+        <div>
+          <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
+          <div class="cert-issuer">Nama Lembaga</div>
+          <div class="cert-year">20XX</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-eyebrow reveal">Kontak</div>
+    <h2 class="section-title reveal reveal-delay-1">Mari<br>berkolaborasi<span style="color:var(--accent)">.</span></h2>
+    <div class="contact-wrap" style="margin-top:3rem">
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label">Nama</label>
+          <input type="text" class="form-input" placeholder="Nama lengkap Anda" id="cName">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="email@contoh.com" id="cEmail">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Pesan</label>
+          <textarea class="form-input" rows="5" placeholder="Ceritakan tentang peluang atau proyek Anda..." id="cMsg"></textarea>
+        </div>
+        <button class="btn-primary" onclick="handleSubmit()" style="border:none;cursor:pointer;width:fit-content">Kirim Pesan →</button>
+      </div>
+      <div class="contact-info reveal reveal-delay-2">
+        <div class="contact-item">
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value"><a href="mailto:nama@email.com">nama@email.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">WhatsApp</div>
+          <div class="contact-item-value"><a href="tel:+62812345678">+62 812 3456 78XX</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Lokasi</div>
+          <div class="contact-item-value">[Kota], Indonesia</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Ketersediaan</div>
+          <div class="contact-item-value">
+            <span style="color:var(--green)">● </span>Open for internship — [Bulan] 2025
+          </div>
+        </div>
+        <div>
+          <div class="contact-item-label">Temukan saya di</div>
+          <div class="social-row">
+            <a href="#" class="social-btn" title="LinkedIn">in</a>
+            <a href="#" class="social-btn" title="GitHub">GH</a>
+            <a href="#" class="social-btn" title="Behance">Be</a>
+            <a href="#" class="social-btn" title="Dribbble">Dr</a>
+            <a href="#" class="social-btn" title="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">[Nama Kamu] — Portfolio 2025</span>
+  <span class="footer-copy">Designed & built with intention ✦</span>
+</footer>
+
+<div class="toast" id="toast">✓ Pesan terkirim! Saya akan membalas segera.</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
