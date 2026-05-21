@@ -1,25 +1,48 @@
+// ─── Theme toggle ─────────────────────────────────────────
+(function () {
+  const btn = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') document.body.classList.add('light');
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+  });
+})();
+
 // ─── Cursor ───────────────────────────────────────────────
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
 
+// Sembunyikan cursor di perangkat touch
+let isTouch = false;
+window.addEventListener('touchstart', () => {
+  isTouch = true;
+  cursor.style.display = 'none';
+  ring.style.display = 'none';
+}, { once: true });
+
 document.addEventListener('mousemove', e => {
+  if (isTouch) return;
   mx = e.clientX;
   my = e.clientY;
 });
 
 function animateCursor() {
-  cursor.style.left = mx + 'px';
-  cursor.style.top = my + 'px';
-  rx += (mx - rx) * 0.12;
-  ry += (my - ry) * 0.12;
-  ring.style.left = rx + 'px';
-  ring.style.top = ry + 'px';
+  if (!isTouch) {
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+  }
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
 
-document.querySelectorAll('a, button, .exp-tab, .project-card').forEach(el => {
+document.querySelectorAll('a, button, .exp-tab, .project-card, .theme-toggle').forEach(el => {
   el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
   el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
 });
@@ -74,21 +97,22 @@ function showToast(msg) {
 
 // ─── Contact form submit ──────────────────────────────────
 function handleSubmit() {
-  const n = document.getElementById('cName').value;
-  const e = document.getElementById('cEmail').value;
-  const m = document.getElementById('cMsg').value;
+  const n = document.getElementById('cName').value.trim();
+  const e = document.getElementById('cEmail').value.trim();
+  const m = document.getElementById('cMsg').value.trim();
   if (!n || !e || !m) {
     showToast('⚠ Mohon isi semua field terlebih dahulu.');
     return;
   }
-  showToast('✓ Pesan terkirim! Saya akan membalas segera.');
+  const subject = encodeURIComponent('Pesan dari Portfolio — ' + n);
+  const body = encodeURIComponent('Nama: ' + n + '\nEmail: ' + e + '\n\nPesan:\n' + m);
+  window.location.href = 'mailto:arifakbarudin7@gmail.com?subject=' + subject + '&body=' + body;
+  showToast('✓ Membuka aplikasi email Anda...');
   document.getElementById('cName').value = '';
   document.getElementById('cEmail').value = '';
   document.getElementById('cMsg').value = '';
 }
 
 // ─── CV button ────────────────────────────────────────────
-document.getElementById('cvBtn').addEventListener('click', e => {
-  e.preventDefault();
-  showToast('📄 Ganti link ini dengan file CV Anda yang sesungguhnya.');
-});
+// Tombol CV sudah aktif sebagai link langsung ke file PDF.
+// Ganti path "cv/cv-arif-akbarudin.pdf" dengan lokasi file CV yang sebenarnya.
