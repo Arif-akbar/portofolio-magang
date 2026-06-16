@@ -63,6 +63,27 @@ function closeMobileMenu() {
   document.getElementById('mobile-menu').classList.remove('open');
 }
 
+// ─── Toggle "Lihat semua" projects ───────────────────────
+(function () {
+  const btn = document.getElementById('toggleProjects');
+  if (!btn) return;
+  let expanded = false;
+
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+    document.querySelectorAll('.project-extra').forEach(card => {
+      card.style.display = expanded ? 'block' : 'none';
+      // trigger reveal animation untuk card yang baru muncul
+      if (expanded) {
+        setTimeout(() => card.classList.add('visible'), 50);
+      } else {
+        card.classList.remove('visible');
+      }
+    });
+    btn.textContent = expanded ? '← Sembunyikan' : 'Lihat semua →';
+  });
+})();
+
 // ─── Reveal on scroll ─────────────────────────────────────
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -73,6 +94,40 @@ const revealObs = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal, .skill-cell').forEach(el => revealObs.observe(el));
+
+// ─── Counter animation untuk hero stats ───────────────────
+function animateCounter(el) {
+  const target = parseInt(el.getAttribute('data-target'));
+  const duration = 2000; // 2 detik
+  const increment = target / (duration / 16); // 60fps
+  let current = 0;
+
+  const updateCounter = () => {
+    current += increment;
+    if (current < target) {
+      el.textContent = Math.floor(current) + '+';
+      requestAnimationFrame(updateCounter);
+    } else {
+      el.textContent = target + '+';
+    }
+  };
+  updateCounter();
+}
+
+// Jalankan counter saat hero-status atau hero-stats-mobile terlihat
+const statsObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      document.querySelectorAll('.hero-stat-num[data-target]').forEach(animateCounter);
+      statsObs.disconnect(); // hanya jalankan sekali
+    }
+  });
+}, { threshold: 0.3 });
+
+const heroStatus = document.querySelector('.hero-status');
+const heroStatsMobile = document.querySelector('.hero-stats-mobile');
+if (heroStatus) statsObs.observe(heroStatus);
+if (heroStatsMobile) statsObs.observe(heroStatsMobile);
 
 // ─── Skill bar widths ─────────────────────────────────────
 document.querySelectorAll('.skill-bar-fill').forEach(el => {

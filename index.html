@@ -1,694 +1,637 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio — Arif Akbarudin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursor-ring"></div>
 
-    <!-- NAV -->
-    <nav id="nav">
-      <a href="#hero" class="nav-logo">Arif<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#skills">Keahlian</a></li>
-        <li><a href="#experience">Pengalaman</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="#contact" class="nav-cta">Hubungi Saya</a>
-        <button class="theme-toggle" id="themeToggle" title="Ganti tema">
-          <span class="icon-moon">🌙</span>
-          <span class="icon-sun">☀️</span>
-        </button>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Arif Akbarudin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Arif<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-cta">Hubungi Saya</a>
+      <button class="theme-toggle" id="themeToggle" title="Ganti tema">
+        <span class="icon-moon">🌙</span>
+        <span class="icon-sun">☀️</span>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
       </div>
-    </nav>
-
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#about" onclick="closeMobileMenu()">Tentang</a>
-      <a href="#projects" onclick="closeMobileMenu()">Proyek</a>
-      <a href="#skills" onclick="closeMobileMenu()">Keahlian</a>
-      <a href="#experience" onclick="closeMobileMenu()">Pengalaman</a>
-      <a href="#contact" onclick="closeMobileMenu()">Kontak</a>
     </div>
+  </nav>
 
-    <!-- HERO -->
-    <section id="hero">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-content">
-        <!-- <div class="hero-label">UI/UX Designer & Front-End Developer</div> -->
-        <!-- <div class="avail-badge">
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" onclick="closeMobileMenu()">Tentang</a>
+    <a href="#projects" onclick="closeMobileMenu()">Proyek</a>
+    <a href="#skills" onclick="closeMobileMenu()">Keahlian</a>
+    <a href="#experience" onclick="closeMobileMenu()">Pengalaman</a>
+    <a href="#contact" onclick="closeMobileMenu()">Kontak</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <!-- <div class="hero-label">UI/UX Designer & Front-End Developer</div> -->
+      <!-- <div class="avail-badge">
           <div class="avail-dot"></div>
           Tersedia untuk magang
         </div> -->
-        <h1 class="hero-name">
-          <div class="line1">Arif</div>
-          <div class="line2">Akbarudin<span class="accent">.</span></div>
-        </h1>
-        <p class="hero-desc">
-          Berfokus pada
-          <strong>pengolahan data dan pengembangan sistem</strong> untuk
-          menciptakan solusi digital yang informatif, efisien, dan mudah
-          digunakan.
-        </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">Lihat Proyek →</a>
-          <a
-            href="cv/cv-arif-akbarudin.pdf"
-            class="btn-secondary"
-            id="cvBtn"
-            target="_blank"
-            >Download CV ↓</a
-          >
-        </div>
+      <h1 class="hero-name">
+        <div class="line1">Arif</div>
+        <div class="line2">Akbarudin<span class="accent">.</span></div>
+      </h1>
+      <p class="hero-desc">
+        Mengubah data menjadi solusi digital yang bermakna melalui <strong>pengolahan data dan pengembangan
+          sistem</strong> yang modern, efisien, dan user-friendly.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Lihat Proyek →</a>
+        <a href="CV Arif Akbar.pdf" class="btn-secondary" id="cvBtn" target="_blank" download="CV_Arif_Akbarudin.pdf">Download CV ↓</a>
       </div>
-      <div class="hero-status">
+      <!-- Stats versi mobile (tampil di bawah tombol) -->
+      <div class="hero-stats-mobile">
         <div>
-          <div class="hero-stat-num">13+</div>
-          <div class="hero-stat-label">Proyek selesai</div>
+          <div class="hero-stat-num" data-target="12">0</div>
+          <div class="hero-stat-label">Proyek</div>
         </div>
         <div>
-          <div class="hero-stat-num">3+</div>
+          <div class="hero-stat-num" data-target="3">0</div>
           <div class="hero-stat-label">Tahun belajar</div>
         </div>
         <div>
-          <div class="hero-stat-num">8+</div>
-          <div class="hero-stat-label">Tools dikuasai</div>
+          <div class="hero-stat-num" data-target="8">0</div>
+          <div class="hero-stat-label">Tools</div>
         </div>
       </div>
-      <div class="hero-scroll">
-        <div class="scroll-line"></div>
-        <span>scroll</span>
+    </div>
+    <div class="hero-status">
+      <div>
+        <div class="hero-stat-num" data-target="12">0</div>
+        <div class="hero-stat-label">Proyek selesai</div>
       </div>
-    </section>
+      <div>
+        <div class="hero-stat-num" data-target="3">0</div>
+        <div class="hero-stat-label">Tahun belajar</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-target="8">0</div>
+        <div class="hero-stat-label">Tools dikuasai</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div>
-            <div class="section-eyebrow reveal">Tentang Saya</div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <div class="section-eyebrow reveal">Tentang Saya</div>
 
-            <h2 class="section-title reveal reveal-delay-1">
-              Data, Sistem,<br />dan<br />
-              <em style="font-style: italic; color: var(--accent)"
-                >Teknologi.</em
-              >
-            </h2>
+          <h2 class="section-title reveal reveal-delay-1">
+            Data, Sistem,<br />dan<br />
+            <em style="font-style: italic; color: var(--accent)">Teknologi.</em>
+          </h2>
 
-            <p class="about-text reveal reveal-delay-2">
-              Saya mahasiswa <strong>Sistem Informasi</strong> di
-              <strong>Universitas Duta Bangsa Surakarta</strong>
-              dengan fokus pada <strong>data science</strong> dan pengembangan
-              teknologi digital. Saya tertarik membangun solusi yang tidak hanya
-              berjalan dengan baik, tetapi juga mudah digunakan dan bermanfaat.
+          <p class="about-text reveal reveal-delay-2">
+            Saya merupakan mahasiswa <strong>Sistem Informasi</strong> di <strong>Universitas Duta Bangsa Surakarta
+            </strong>yang memiliki minat dan fokus
+            pada bidang data science serta <strong>pengembangan teknologi digital</strong>. Saya berkomitmen untuk
+            mengembangkan solusi
+            teknologi yang tidak hanya optimal dari sisi fungsionalitas, tetapi juga intuitif, mudah digunakan, dan
+            memberikan manfaat nyata bagi pengguna.
+          </p>
+
+          <div class="about-tags reveal reveal-delay-3">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="about-photo-block reveal reveal-delay-2">
+          <div class="photo-wrapper">
+            <img src="porto.jpeg" alt="Foto Arif Akbarudin" class="about-photo">
+          </div>
+          <div class="accent-badge">
+            <span>2025</span>
+            Ready
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-eyebrow reveal">Keahlian</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Tools & teknologi<br />yang saya kuasai.
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-cell reveal">
+          <div class="skill-icon">🤖</div>
+          <div class="skill-name">AI & Deep Learning</div>
+          <div class="skill-sub">CNN, RNN, LSTM, GRU, YOLO, Computer Vision, Time Series Forecasting</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.85"></div>
+          </div>
+        </div>
+        <div class="skill-cell reveal reveal-delay-1">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python & Libraries</div>
+          <div class="skill-sub">TensorFlow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.9"></div>
+          </div>
+        </div>
+        <div class="skill-cell reveal reveal-delay-2">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">Deployment & Backend</div>
+          <div class="skill-sub">Flask, Streamlit, RESTful API, PHP Laravel Full-Stack</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.8"></div>
+          </div>
+        </div>
+        <div class="skill-cell reveal reveal-delay-3">
+          <div class="skill-icon">📊</div>
+          <div class="skill-name">Data Analysis</div>
+          <div class="skill-sub">Data Mining, Statistik Lanjut, Time Series, Pemrosesan DICOM</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.85"></div>
+          </div>
+        </div>
+        <div class="skill-cell reveal">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-name">Tools & Databases</div>
+          <div class="skill-sub">Python, SQL, Git, GitHub, Jupyter Notebook</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.88"></div>
+          </div>
+        </div>
+        <div class="skill-cell reveal reveal-delay-1">
+          <div class="skill-icon">☁️</div>
+          <div class="skill-name">Cloud & Web Dev</div>
+          <div class="skill-sub">Cloud Computing, HTML, CSS, JavaScript, MySQL</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="--w: 0.75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <div class="section-eyebrow reveal">Proyek</div>
+          <h2 class="section-title reveal reveal-delay-1">
+            Karya pilihan<br />saya.
+          </h2>
+        </div>
+        <button id="toggleProjects" class="btn-secondary reveal reveal-delay-2" style="white-space:nowrap;font-size:0.85rem;border:none;cursor:pointer">Lihat semua →</button>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 — Featured -->
+        <a href="https://github.com/Arif-akbar/pendeteksi-penyakit-paru" target="_blank" class="project-card featured reveal">
+          <div class="project-thumb">
+            <div class="project-thumb-bg thumb-1">
+              <span style="font-size:3rem;opacity:0.4">🫁</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">AI / ML</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Flask</span>
+            </div>
+            <div class="project-title">Sistem Pendeteksi Penyakit Paru</div>
+            <div class="project-desc">Prototipe web deteksi dini pneumonia pada citra X-Ray paru berbasis DICOM menggunakan YOLO dan Flask. Dilengkapi estimasi tingkat keparahan otomatis dan optimasi threshold untuk meminimalkan false positive.</div>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">Apr 2026</span>
+            <div class="project-link-icon">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 2 — Small -->
+        <a href="https://github.com/Arif-akbar" target="_blank" class="project-card small reveal reveal-delay-1">
+          <div class="project-thumb">
+            <div class="project-thumb-bg thumb-2">
+              <span style="font-size:2.5rem;opacity:0.4">⚡</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="project-tag">Data Science</span><span class="project-tag">Python</span></div>
+            <div class="project-title">Peramalan Konsumsi Energi Terbarukan</div>
+            <div class="project-desc">Evaluasi komparatif model forecasting (SARIMA, MA, RNN, LSTM, GRU). SARIMA terpilih dengan MAPE 1.92%.</div>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">Mei 2026</span>
+            <div class="project-link-icon">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 3 — Medium (extra, tersembunyi) -->
+        <a href="https://github.com/Arif-akbar" target="_blank" class="project-card medium reveal reveal-delay-1 project-extra" style="display:none">
+          <div class="project-thumb">
+            <div class="project-thumb-bg thumb-3">
+              <span style="font-size:2.5rem;opacity:0.4">🏘️</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Web Dev</span>
+              <span class="project-tag">Laravel</span>
+            </div>
+            <div class="project-title">Website Desa — KKN Gunungkidul</div>
+            <div class="project-desc">Website desa untuk modernisasi dan perluasan jangkauan penjualan hasil kerajinan lokal masyarakat Gunungkidul.</div>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">Des 2025</span>
+            <div class="project-link-icon">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 4 — Medium (extra, tersembunyi) -->
+        <a href="https://github.com/Arif-akbar" target="_blank" class="project-card medium reveal reveal-delay-2 project-extra" style="display:none">
+          <div class="project-thumb">
+            <div class="project-thumb-bg thumb-4">
+              <span style="font-size:2.5rem;opacity:0.4">�</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Streamlit</span>
+            </div>
+            <div class="project-title">Dashboard Analisis Data Interaktif</div>
+            <div class="project-desc">Aplikasi dashboard berbasis Streamlit untuk eksplorasi dan visualisasi dataset dengan integrasi model Scikit-learn.</div>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">2025</span>
+            <div class="project-link-icon">↗</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-eyebrow reveal">Pengalaman</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Perjalanan saya<br />sejauh ini.
+      </h2>
+      <div class="exp-grid">
+        <div class="exp-nav">
+          <div class="exp-tab active" onclick="switchExp(this, 'exp1')">
+            <div class="exp-tab-dot"></div>
+            <span class="exp-tab-label">Organisasi / Himpunan</span>
+          </div>
+          <div class="exp-tab" onclick="switchExp(this, 'exp2')">
+            <div class="exp-tab-dot"></div>
+            <span class="exp-tab-label">Freelance Project</span>
+          </div>
+          <div class="exp-tab" onclick="switchExp(this, 'exp3')">
+            <div class="exp-tab-dot"></div>
+            <span class="exp-tab-label">Kompetisi / Event</span>
+          </div>
+          <div class="exp-tab" onclick="switchExp(this, 'exp4')">
+            <div class="exp-tab-dot"></div>
+            <span class="exp-tab-label">Volunteer / Relawan</span>
+          </div>
+        </div>
+        <div class="exp-panels">
+          <div class="exp-panel active" id="exp1">
+            <div class="exp-panel-header">
+              <div class="exp-role">Kepala Divisi Kreatif</div>
+              <div class="exp-company">
+                Himpunan Mahasiswa Sistem Informasi — Universitas Duta Bangsa
+                Surakarta
+              </div>
+              <div class="exp-period">Agustus 2023 — Desember 2024</div>
+            </div>
+            <p class="exp-body">
+              Memimpin tim kreatif yang terdiri dari 8 anggota untuk
+              memproduksi materi visual dan digital untuk seluruh kegiatan
+              himpunan.
             </p>
-
-            <div class="about-tags reveal reveal-delay-3">
-              <span class="tag">Data Science</span>
-              <span class="tag">Python</span>
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Flutter</span>
-              <span class="tag">Web Development</span>
-              <span class="tag">MySQL</span>
-            </div>
+            <ul class="exp-bullets">
+              <li>
+                Merancang identitas visual event tahunan yang dihadiri 500+
+                peserta
+              </li>
+              <li>
+                Membuat panduan brand (brand guideline) untuk konsistensi
+                visual himpunan
+              </li>
+              <li>
+                Mengelola sosial media dengan pertumbuhan follower 200% dalam
+                6 bulan
+              </li>
+              <li>
+                Melatih 5 anggota baru dalam penggunaan Figma dan Adobe
+                Illustrator
+              </li>
+            </ul>
           </div>
-          <div class="about-photo-block reveal reveal-delay-2">
-            <div class="photo-wrapper">
-              <img src="porto.jpeg" alt="Foto Arif Akbarudin" class="about-photo">
+          <div class="exp-panel" id="exp2">
+            <div class="exp-panel-header">
+              <div class="exp-role">UI/UX Designer — Freelance</div>
+              <div class="exp-company">Berbagai klien UMKM & Startup</div>
+              <div class="exp-period">Januari 2023 — Sekarang</div>
             </div>
-            <div class="accent-badge">
-              <span>2025</span>
-              Ready
-            </div>
+            <p class="exp-body">
+              Mengerjakan proyek desain UI/UX untuk berbagai klien, mulai dari
+              landing page hingga aplikasi mobile.
+            </p>
+            <ul class="exp-bullets">
+              <li>
+                Menyelesaikan 8+ proyek desain UI untuk klien UMKM dan startup
+                lokal
+              </li>
+              <li>
+                Menangani proyek dari discovery, wireframe, hingga handoff ke
+                developer
+              </li>
+              <li>
+                Retensi klien 80% dengan rata-rata rating kepuasan 4.8/5
+              </li>
+            </ul>
           </div>
+          <div class="exp-panel" id="exp3">
+            <div class="exp-panel-header">
+              <div class="exp-role">Finalis — UI/UX Competition</div>
+              <div class="exp-company">
+                [Nama Kompetisi] — [Penyelenggara]
+              </div>
+              <div class="exp-period">Oktober 2024</div>
             </div>
+            <p class="exp-body">
+              Masuk ke babak final kompetisi desain UI/UX tingkat nasional
+              dengan solusi inovatif untuk tantangan yang diberikan.
+            </p>
+            <ul class="exp-bullets">
+              <li>Berhasil menyisihkan 200+ tim dari seluruh Indonesia</li>
+              <li>
+                Presentasi solusi di hadapan juri dari perusahaan teknologi
+                ternama
+              </li>
+              <li>Menghasilkan prototipe high-fidelity dalam waktu 48 jam</li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-eyebrow reveal">Keahlian</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Tools & teknologi<br />yang saya kuasai.
-        </h2>
-        <div class="skills-grid">
-          <div class="skill-cell reveal">
-            <div class="skill-icon">🎨</div>
-            <div class="skill-name">UI Design</div>
-            <div class="skill-sub">Figma, Adobe XD, Sketch</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.9"></div>
+          <div class="exp-panel" id="exp4">
+            <div class="exp-panel-header">
+              <div class="exp-role">Mentor Desain — Volunteer</div>
+              <div class="exp-company">[Nama Komunitas / Program]</div>
+              <div class="exp-period">Maret 2024 — Juni 2024</div>
             </div>
-          </div>
-          <div class="skill-cell reveal reveal-delay-1">
-            <div class="skill-icon">🔍</div>
-            <div class="skill-name">UX Research</div>
-            <div class="skill-sub">
-              User interview, usability testing, persona
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.75"></div>
-            </div>
-          </div>
-          <div class="skill-cell reveal reveal-delay-2">
-            <div class="skill-icon">⚡</div>
-            <div class="skill-name">Front-End Dev</div>
-            <div class="skill-sub">HTML, CSS, JavaScript, React</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.8"></div>
-            </div>
-          </div>
-          <div class="skill-cell reveal reveal-delay-3">
-            <div class="skill-icon">📐</div>
-            <div class="skill-name">Prototyping</div>
-            <div class="skill-sub">
-              Interactive prototype, micro-interaction
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.85"></div>
-            </div>
-          </div>
-          <div class="skill-cell reveal">
-            <div class="skill-icon">🗂️</div>
-            <div class="skill-name">Design System</div>
-            <div class="skill-sub">
-              Component library, tokens, documentation
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.7"></div>
-            </div>
-          </div>
-          <div class="skill-cell reveal reveal-delay-1">
-            <div class="skill-icon">📱</div>
-            <div class="skill-name">Responsive Design</div>
-            <div class="skill-sub">
-              Mobile-first, accessibility, cross-platform
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="--w: 0.88"></div>
-            </div>
+            <p class="exp-body">
+              Membimbing 20+ pelajar SMA dalam memahami dasar-dasar desain
+              UI/UX dan cara menggunakan Figma sebagai alat desain.
+            </p>
+            <ul class="exp-bullets">
+              <li>Mengajar 10 sesi online setiap minggu selama 3 bulan</li>
+              <li>
+                Menyusun kurikulum desain dasar yang terstruktur dan mudah
+                dipahami
+              </li>
+              <li>95% peserta berhasil menyelesaikan proyek akhir mereka</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <div class="projects-header">
+  <!-- EDUCATION -->
+  <!-- <section id="education">
+    <div class="container">
+      <div class="section-eyebrow reveal">Pendidikan</div>
+
+      <h2 class="section-title reveal reveal-delay-1">
+        Perjalanan<br />akademis saya.
+      </h2>
+
+      <div class="edu-cards">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+
+          <div class="edu-degree">S1 Sistem Informasi</div>
+
+          <div class="edu-school">
+            Universitas Duta Bangsa Surakarta
+          </div>
+
+          <div class="edu-year">
+            2023 — Sekarang · Fokus Data Science
+          </div>
+
+          <p class="edu-desc">
+            Mempelajari pengolahan data, pengembangan sistem,
+            basis data, serta teknologi digital untuk membangun
+            solusi yang efektif dan mudah digunakan.
+          </p>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-icon">🏫</div>
+
+          <div class="edu-degree">
+            Teknik Kendaraan Ringan Otomotif
+          </div>
+
+          <div class="edu-school">
+            SMK Muhammadiyah 1 Sukoharjo
+          </div>
+
+          <div class="edu-year">2020 — 2023</div>
+
+          <p class="edu-desc">
+            Memahami dasar teknis, analisis, dan pemecahan
+            masalah yang membentuk pola berpikir terstruktur
+            dalam dunia teknologi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CERTIFICATES -->
+  <!-- <section id="certificates">
+    <div class="container">
+      <div class="section-eyebrow reveal">Sertifikat</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Sertifikasi &<br />pencapaian.
+      </h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎨</div>
           <div>
-            <div class="section-eyebrow reveal">Proyek</div>
-            <h2 class="section-title reveal reveal-delay-1">
-              Karya pilihan<br />saya.
-            </h2>
-          </div>
-          <a
-            href="#"
-            class="btn-secondary reveal reveal-delay-2"
-            style="white-space: nowrap; font-size: 0.85rem"
-            >Lihat semua →</a
-          >
-        </div>
-        <div class="projects-grid">
-          <!-- Featured project -->
-          <a href="#" class="project-card featured reveal">
-            <div class="project-thumb">
-              <div class="project-thumb-bg thumb-1">
-                <span style="font-size: 3rem; opacity: 0.4">🏠</span>
-              </div>
+            <div class="cert-title">
+              Google UX Design Professional Certificate
             </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="project-tag">UI/UX Design</span>
-                <span class="project-tag">Figma</span>
-                <span class="project-tag">Mobile App</span>
-              </div>
-              <div class="project-title">
-                Redesign Aplikasi Properti — [Nama Proyek]
-              </div>
-              <div class="project-desc">
-                Redesign alur pencarian properti yang menurunkan drop-off rate
-                40% dan meningkatkan konversi. Riset mendalam dengan 15
-                responden, wireframe, hingga prototype high-fidelity.
-              </div>
-            </div>
-            <div class="project-footer">
-              <span class="project-year">2024</span>
-              <div class="project-link-icon">↗</div>
-            </div>
-          </a>
-
-          <!-- Small card -->
-          <a href="#" class="project-card small reveal reveal-delay-1">
-            <div class="project-thumb">
-              <div class="project-thumb-bg thumb-2">
-                <span style="font-size: 2.5rem; opacity: 0.4">🛒</span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="project-tag">E-Commerce</span>
-              </div>
-              <div class="project-title">Dashboard Admin Toko Online</div>
-              <div class="project-desc">
-                Design sistem dashboard untuk manajemen produk dan pesanan.
-              </div>
-            </div>
-            <div class="project-footer">
-              <span class="project-year">2024</span>
-              <div class="project-link-icon">↗</div>
-            </div>
-          </a>
-
-          <!-- Medium cards -->
-          <a href="#" class="project-card medium reveal reveal-delay-1">
-            <div class="project-thumb">
-              <div class="project-thumb-bg thumb-3">
-                <span style="font-size: 2.5rem; opacity: 0.4">📚</span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="project-tag">Web App</span>
-                <span class="project-tag">React</span>
-              </div>
-              <div class="project-title">
-                Platform Belajar Online — [Nama Proyek]
-              </div>
-              <div class="project-desc">
-                Pengembangan front-end platform e-learning dengan React.
-                Implementasi design system dari Figma ke kode.
-              </div>
-            </div>
-            <div class="project-footer">
-              <span class="project-year">2023</span>
-              <div class="project-link-icon">↗</div>
-            </div>
-          </a>
-
-          <a href="#" class="project-card medium reveal reveal-delay-2">
-            <div class="project-thumb">
-              <div class="project-thumb-bg thumb-4">
-                <span style="font-size: 2.5rem; opacity: 0.4">💊</span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="project-tag">Kesehatan</span>
-                <span class="project-tag">UX Research</span>
-              </div>
-              <div class="project-title">
-                Aplikasi Pengingat Obat — [Nama Proyek]
-              </div>
-              <div class="project-desc">
-                UX research + prototype untuk aplikasi reminder obat bagi
-                lansia. Fokus aksesibilitas dan kemudahan pakai.
-              </div>
-            </div>
-            <div class="project-footer">
-              <span class="project-year">2023</span>
-              <div class="project-link-icon">↗</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <div class="container">
-        <div class="section-eyebrow reveal">Pengalaman</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Perjalanan saya<br />sejauh ini.
-        </h2>
-        <div class="exp-grid">
-          <div class="exp-nav">
-            <div class="exp-tab active" onclick="switchExp(this, 'exp1')">
-              <div class="exp-tab-dot"></div>
-              <span class="exp-tab-label">Organisasi / Himpunan</span>
-            </div>
-            <div class="exp-tab" onclick="switchExp(this, 'exp2')">
-              <div class="exp-tab-dot"></div>
-              <span class="exp-tab-label">Freelance Project</span>
-            </div>
-            <div class="exp-tab" onclick="switchExp(this, 'exp3')">
-              <div class="exp-tab-dot"></div>
-              <span class="exp-tab-label">Kompetisi / Event</span>
-            </div>
-            <div class="exp-tab" onclick="switchExp(this, 'exp4')">
-              <div class="exp-tab-dot"></div>
-              <span class="exp-tab-label">Volunteer / Relawan</span>
-            </div>
-          </div>
-          <div class="exp-panels">
-            <div class="exp-panel active" id="exp1">
-              <div class="exp-panel-header">
-                <div class="exp-role">Kepala Divisi Kreatif</div>
-                <div class="exp-company">
-                  Himpunan Mahasiswa Sistem Informasi — Universitas Duta Bangsa
-                  Surakarta
-                </div>
-                <div class="exp-period">Agustus 2023 — Desember 2024</div>
-              </div>
-              <p class="exp-body">
-                Memimpin tim kreatif yang terdiri dari 8 anggota untuk
-                memproduksi materi visual dan digital untuk seluruh kegiatan
-                himpunan.
-              </p>
-              <ul class="exp-bullets">
-                <li>
-                  Merancang identitas visual event tahunan yang dihadiri 500+
-                  peserta
-                </li>
-                <li>
-                  Membuat panduan brand (brand guideline) untuk konsistensi
-                  visual himpunan
-                </li>
-                <li>
-                  Mengelola sosial media dengan pertumbuhan follower 200% dalam
-                  6 bulan
-                </li>
-                <li>
-                  Melatih 5 anggota baru dalam penggunaan Figma dan Adobe
-                  Illustrator
-                </li>
-              </ul>
-            </div>
-            <div class="exp-panel" id="exp2">
-              <div class="exp-panel-header">
-                <div class="exp-role">UI/UX Designer — Freelance</div>
-                <div class="exp-company">Berbagai klien UMKM & Startup</div>
-                <div class="exp-period">Januari 2023 — Sekarang</div>
-              </div>
-              <p class="exp-body">
-                Mengerjakan proyek desain UI/UX untuk berbagai klien, mulai dari
-                landing page hingga aplikasi mobile.
-              </p>
-              <ul class="exp-bullets">
-                <li>
-                  Menyelesaikan 8+ proyek desain UI untuk klien UMKM dan startup
-                  lokal
-                </li>
-                <li>
-                  Menangani proyek dari discovery, wireframe, hingga handoff ke
-                  developer
-                </li>
-                <li>
-                  Retensi klien 80% dengan rata-rata rating kepuasan 4.8/5
-                </li>
-              </ul>
-            </div>
-            <div class="exp-panel" id="exp3">
-              <div class="exp-panel-header">
-                <div class="exp-role">Finalis — UI/UX Competition</div>
-                <div class="exp-company">
-                  [Nama Kompetisi] — [Penyelenggara]
-                </div>
-                <div class="exp-period">Oktober 2024</div>
-              </div>
-              <p class="exp-body">
-                Masuk ke babak final kompetisi desain UI/UX tingkat nasional
-                dengan solusi inovatif untuk tantangan yang diberikan.
-              </p>
-              <ul class="exp-bullets">
-                <li>Berhasil menyisihkan 200+ tim dari seluruh Indonesia</li>
-                <li>
-                  Presentasi solusi di hadapan juri dari perusahaan teknologi
-                  ternama
-                </li>
-                <li>Menghasilkan prototipe high-fidelity dalam waktu 48 jam</li>
-              </ul>
-            </div>
-            <div class="exp-panel" id="exp4">
-              <div class="exp-panel-header">
-                <div class="exp-role">Mentor Desain — Volunteer</div>
-                <div class="exp-company">[Nama Komunitas / Program]</div>
-                <div class="exp-period">Maret 2024 — Juni 2024</div>
-              </div>
-              <p class="exp-body">
-                Membimbing 20+ pelajar SMA dalam memahami dasar-dasar desain
-                UI/UX dan cara menggunakan Figma sebagai alat desain.
-              </p>
-              <ul class="exp-bullets">
-                <li>Mengajar 10 sesi online setiap minggu selama 3 bulan</li>
-                <li>
-                  Menyusun kurikulum desain dasar yang terstruktur dan mudah
-                  dipahami
-                </li>
-                <li>95% peserta berhasil menyelesaikan proyek akhir mereka</li>
-              </ul>
-            </div>
+            <div class="cert-issuer">Google · Coursera</div>
+            <div class="cert-year">2024</div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-  <div class="container">
-    <div class="section-eyebrow reveal">Pendidikan</div>
-
-    <h2 class="section-title reveal reveal-delay-1">
-      Perjalanan<br />akademis saya.
-    </h2>
-
-    <div class="edu-cards">
-      <div class="edu-card reveal">
-        <div class="edu-icon">🎓</div>
-
-        <div class="edu-degree">S1 Sistem Informasi</div>
-
-        <div class="edu-school">
-          Universitas Duta Bangsa Surakarta
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">⚛️</div>
+          <div>
+            <div class="cert-title">React — The Complete Guide</div>
+            <div class="cert-issuer">Udemy · Maximilian Schwarzmüller</div>
+            <div class="cert-year">2024</div>
+          </div>
         </div>
-
-        <div class="edu-year">
-          2023 — Sekarang · Fokus Data Science
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">📊</div>
+          <div>
+            <div class="cert-title">Figma Intermediate to Advanced</div>
+            <div class="cert-issuer">Dicoding Indonesia</div>
+            <div class="cert-year">2023</div>
+          </div>
         </div>
-
-        <p class="edu-desc">
-          Mempelajari pengolahan data, pengembangan sistem,
-          basis data, serta teknologi digital untuk membangun
-          solusi yang efektif dan mudah digunakan.
-        </p>
-      </div>
-
-      <div class="edu-card reveal reveal-delay-1">
-        <div class="edu-icon">🏫</div>
-
-        <div class="edu-degree">
-          Teknik Kendaraan Ringan Otomotif
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌐</div>
+          <div>
+            <div class="cert-title">Front-End Web Development</div>
+            <div class="cert-issuer">Dicoding Indonesia</div>
+            <div class="cert-year">2023</div>
+          </div>
         </div>
-
-        <div class="edu-school">
-          SMK Muhammadiyah 1 Sukoharjo
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">🏆</div>
+          <div>
+            <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
+            <div class="cert-issuer">Nama Lembaga</div>
+            <div class="cert-year">20XX</div>
+          </div>
         </div>
-
-        <div class="edu-year">2020 — 2023</div>
-
-        <p class="edu-desc">
-          Memahami dasar teknis, analisis, dan pemecahan
-          masalah yang membentuk pola berpikir terstruktur
-          dalam dunia teknologi.
-        </p>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">✨</div>
+          <div>
+            <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
+            <div class="cert-issuer">Nama Lembaga</div>
+            <div class="cert-year">20XX</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section> -->
 
-    <!-- CERTIFICATES -->
-    <section id="certificates">
-      <div class="container">
-        <div class="section-eyebrow reveal">Sertifikat</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Sertifikasi &<br />pencapaian.
-        </h2>
-        <div class="cert-grid">
-          <div class="cert-card reveal">
-            <div class="cert-icon">🎨</div>
-            <div>
-              <div class="cert-title">
-                Google UX Design Professional Certificate
-              </div>
-              <div class="cert-issuer">Google · Coursera</div>
-              <div class="cert-year">2024</div>
-            </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-eyebrow reveal">Kontak</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Mari<br />berkolaborasi<span style="color: var(--accent)">.</span>
+      </h2>
+      <div class="contact-wrap" style="margin-top: 3rem">
+        <div class="contact-form reveal">
+          <div class="form-group">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-input" placeholder="Nama lengkap Anda" id="cName" />
           </div>
-          <div class="cert-card reveal reveal-delay-1">
-            <div class="cert-icon">⚛️</div>
-            <div>
-              <div class="cert-title">React — The Complete Guide</div>
-              <div class="cert-issuer">Udemy · Maximilian Schwarzmüller</div>
-              <div class="cert-year">2024</div>
-            </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="email@contoh.com" id="cEmail" />
           </div>
-          <div class="cert-card reveal reveal-delay-2">
-            <div class="cert-icon">📊</div>
-            <div>
-              <div class="cert-title">Figma Intermediate to Advanced</div>
-              <div class="cert-issuer">Dicoding Indonesia</div>
-              <div class="cert-year">2023</div>
-            </div>
+          <div class="form-group">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-input" rows="5" placeholder="Ceritakan tentang peluang atau proyek Anda..."
+              id="cMsg"></textarea>
           </div>
-          <div class="cert-card reveal">
-            <div class="cert-icon">🌐</div>
-            <div>
-              <div class="cert-title">Front-End Web Development</div>
-              <div class="cert-issuer">Dicoding Indonesia</div>
-              <div class="cert-year">2023</div>
-            </div>
-          </div>
-          <div class="cert-card reveal reveal-delay-1">
-            <div class="cert-icon">🏆</div>
-            <div>
-              <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
-              <div class="cert-issuer">Nama Lembaga</div>
-              <div class="cert-year">20XX</div>
-            </div>
-          </div>
-          <div class="cert-card reveal reveal-delay-2">
-            <div class="cert-icon">✨</div>
-            <div>
-              <div class="cert-title">[Tambahkan Sertifikat Anda]</div>
-              <div class="cert-issuer">Nama Lembaga</div>
-              <div class="cert-year">20XX</div>
-            </div>
-          </div>
+          <button class="btn-primary" onclick="handleSubmit()"
+            style="border: none; cursor: pointer; width: fit-content">
+            Kirim Pesan →
+          </button>
         </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <div class="section-eyebrow reveal">Kontak</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Mari<br />berkolaborasi<span style="color: var(--accent)">.</span>
-        </h2>
-        <div class="contact-wrap" style="margin-top: 3rem">
-          <div class="contact-form reveal">
-            <div class="form-group">
-              <label class="form-label">Nama</label>
-              <input
-                type="text"
-                class="form-input"
-                placeholder="Nama lengkap Anda"
-                id="cName"
-              />
+        <div class="contact-info reveal reveal-delay-2">
+          <div class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">
+              <a href="mailto:arifakbarudin7@gmail.com">arifakbarudin7@gmail.com</a>
             </div>
-            <div class="form-group">
-              <label class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-input"
-                placeholder="email@contoh.com"
-                id="cEmail"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Pesan</label>
-              <textarea
-                class="form-input"
-                rows="5"
-                placeholder="Ceritakan tentang peluang atau proyek Anda..."
-                id="cMsg"
-              ></textarea>
-            </div>
-            <button
-              class="btn-primary"
-              onclick="handleSubmit()"
-              style="border: none; cursor: pointer; width: fit-content"
-            >
-              Kirim Pesan →
-            </button>
           </div>
-          <div class="contact-info reveal reveal-delay-2">
-            <div class="contact-item">
-              <div class="contact-item-label">Email</div>
-              <div class="contact-item-value">
-                <a href="mailto:arifakbarudin7@gmail.com"
-                  >arifakbarudin7@gmail.com</a
-                >
-              </div>
+          <div class="contact-item">
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-value">
+              <a href="https://wa.me/6287817248883" target="_blank">+62 878 1724 8883</a>
             </div>
-            <div class="contact-item">
-              <div class="contact-item-label">WhatsApp</div>
-              <div class="contact-item-value">
-                <a href="https://wa.me/6287817248883" target="_blank"
-                  >+62 878 1724 8883</a
-                >
-              </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Lokasi</div>
+            <div class="contact-item-value">Sukoharjo, Indonesia</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Ketersediaan</div>
+            <div class="contact-item-value">
+              <span style="color: var(--green)">● </span>Open for internship —
+              [Bulan] 2025
             </div>
-            <div class="contact-item">
-              <div class="contact-item-label">Lokasi</div>
-              <div class="contact-item-value">Sukoharjo, Indonesia</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-label">Ketersediaan</div>
-              <div class="contact-item-value">
-                <span style="color: var(--green)">● </span>Open for internship —
-                [Bulan] 2025
-              </div>
-            </div>
-            <div>
-              <div class="contact-item-label">Temukan saya di</div>
-              <div class="social-row">
-                <a
-                  href="https://www.linkedin.com/in/arif-akbarudin-b1a8542b0"
-                  class="social-btn"
-                  title="LinkedIn"
-                  target="_blank"
-                  >in</a
-                >
-                <a
-                  href="https://github.com/Arif-akbar"
-                  class="social-btn"
-                  title="GitHub"
-                  target="_blank"
-                  >GH</a
-                >
-                <!-- <a href="https://behance.net/arifakbarudin" class="social-btn" title="Behance" target="_blank">Be</a>
+          </div>
+          <div>
+            <div class="contact-item-label">Temukan saya di</div>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/arif-akbarudin-b1a8542b0" class="social-btn" title="LinkedIn"
+                target="_blank">in</a>
+              <a href="https://github.com/Arif-akbar" class="social-btn" title="GitHub" target="_blank">GH</a>
+              <!-- <a href="https://behance.net/arifakbarudin" class="social-btn" title="Behance" target="_blank">Be</a>
             <a href="https://dribbble.com/arifakbarudin" class="social-btn" title="Dribbble" target="_blank">Dr</a> -->
-                <a
-                  href="https://www.instagram.com/4rri__f"
-                  class="social-btn"
-                  title="Instagram"
-                  target="_blank"
-                  >IG</a
-                >
-              </div>
+              <a href="https://www.instagram.com/4rri__f" class="social-btn" title="Instagram" target="_blank">IG</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <span class="footer-name">Arif Akbarudin — Portfolio 2025</span>
-    </footer>
-
-    <div class="toast" id="toast">
-      ✓ Pesan terkirim! Saya akan membalas segera.
     </div>
+  </section>
 
-    <script src="js/main.js"></script>
-  </body>
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-name">Arif Akbarudin — Portfolio 2025</span>
+  </footer>
+
+  <div class="toast" id="toast">
+    ✓ Pesan terkirim! Saya akan membalas segera.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
