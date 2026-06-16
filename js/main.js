@@ -71,11 +71,11 @@ function closeMobileMenu() {
 
   btn.addEventListener('click', () => {
     expanded = !expanded;
-    document.querySelectorAll('.project-extra').forEach(card => {
+    document.querySelectorAll('.project-extra').forEach((card, index) => {
       card.style.display = expanded ? 'block' : 'none';
       // trigger reveal animation untuk card yang baru muncul
       if (expanded) {
-        setTimeout(() => card.classList.add('visible'), 50);
+        setTimeout(() => card.classList.add('visible'), index * 100);
       } else {
         card.classList.remove('visible');
       }
@@ -151,23 +151,40 @@ function showToast(msg) {
 }
 
 // ─── Contact form submit ──────────────────────────────────
-function handleSubmit() {
+function handleSubmit(e) {
   const n = document.getElementById('cName').value.trim();
-  const e = document.getElementById('cEmail').value.trim();
+  const e_val = document.getElementById('cEmail').value.trim();
   const m = document.getElementById('cMsg').value.trim();
-  if (!n || !e || !m) {
+
+  if (!n || !e_val || !m) {
     showToast('⚠ Mohon isi semua field terlebih dahulu.');
-    return;
+    return false;
   }
+
+  // Validasi email format
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(e_val)) {
+    showToast('⚠ Mohon masukkan email yang valid.');
+    return false;
+  }
+
+  // Buat mailto link
   const subject = encodeURIComponent('Pesan dari Portfolio — ' + n);
-  const body = encodeURIComponent('Nama: ' + n + '\nEmail: ' + e + '\n\nPesan:\n' + m);
-  window.location.href = 'mailto:arifakbarudin7@gmail.com?subject=' + subject + '&body=' + body;
-  showToast('✓ Membuka aplikasi email Anda...');
+  const body = encodeURIComponent('Nama: ' + n + '\nEmail: ' + e_val + '\n\nPesan:\n' + m);
+  const mailtoLink = 'mailto:arifakbarudin7@gmail.com?subject=' + subject + '&body=' + body;
+
+  // Buka mailto
+  window.location.href = mailtoLink;
+
+  // Clear form
   document.getElementById('cName').value = '';
   document.getElementById('cEmail').value = '';
   document.getElementById('cMsg').value = '';
+
+  showToast('✓ Membuka aplikasi email Anda...');
+  return false;
 }
 
 // ─── CV button ────────────────────────────────────────────
-// Tombol CV sudah aktif sebagai link langsung ke file PDF.
-// Ganti path "cv/cv-arif-akbarudin.pdf" dengan lokasi file CV yang sebenarnya.
+// CV link sudah diubah ke #contact untuk better UX
+// User dapat mendownload CV dari contact section atau social links
