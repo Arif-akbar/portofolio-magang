@@ -704,6 +704,7 @@ body.light .hero-name .line2 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
+  grid-auto-flow: dense;
 }
 .project-card {
   background: var(--surface);
@@ -733,13 +734,22 @@ body.light .hero-name .line2 {
 }
 .project-thumb {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/4;
   background: var(--surface2);
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-card.small .project-thumb {
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
+}
+.project-card.medium .project-thumb {
+  aspect-ratio: 16/9;
+}
+.project-card.featured .project-thumb {
+  aspect-ratio: 16/9;
 }
 .project-thumb-bg {
   position: absolute;
@@ -1380,9 +1390,6 @@ footer {
   .project-card.small,
   .project-card.medium {
     grid-column: span 1;
-  }
-  .project-card.small .project-thumb {
-    aspect-ratio: 16/9;
   }
   .btn-toggle-projects {
     font-size: 0.8rem;
